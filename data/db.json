@@ -1,0 +1,581 @@
+{
+  "quizzs": [
+    {
+      "id": "ADUI",
+      "name": "Thiết kế giao diện trên Android",
+      "created": "2019-05-04",
+      "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/ADAV.jpg",
+      "questions": [
+        {
+          "question": "System Bar bao gồm các thành phần nào?",
+          "answers": [
+            "Navigation Bar",
+            "Status Bar",
+            "Notification Bar",
+            "Status Bar và Navigation Bar"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Câu nào sau đây đúng khi nói về Frame layout?",
+          "answers": [
+            "Frame layout là loại layout luôn lấy tọa độ gốc là top- left và nó xếp chồng view sau lên view trước",
+            "Frame layout sắp xếp các view ở chính xác tọa độ mong muốn thông qua các thuộc tính layout_x và layout_y",
+            "Frame layout sắp xếp các view theo hàng ngang hoặc hàng dọc, trong một cột hoặc một dòng",
+            "Frame layout sắp xếp các view thành các cột và dòng. Mỗi view trong 1 tableRow sẽ là 1 cột"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Trong android, interface được tạo từ các điều khiển gì?",
+          "answers": [
+            "View và View group",
+            "View",
+            "Button",
+            "View group"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Điều khiển nào sau đây không phải là một layout?",
+          "answers": [
+            "LeftAlignLayout",
+            "RelativeLayout",
+            "AbsoluteLayout",
+            "RelativeLayout"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Các điều khiển nào sau đây hiển thị trên Navigation Bar?",
+          "answers": [
+            "Recent",
+            "Tất cả phương án đều đúng",
+            "Home",
+            "Back"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Loại layout nào sau đây luôn dùng để gắn các control ở góc bên trái trên cùng màn hình và không cho phép thay đổi vị trí của các control?",
+          "answers": [
+            "Frame layout",
+            "Table layout",
+            "Relative layout",
+            "Linear layout"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Khi viết code, ta có thể thiết lập hướng các control trên Linear layout bằng hàm nào?",
+          "answers": [
+            "setVertical()",
+            "setHorizontal()",
+            "setDirection()",
+            "setOrientation()"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Màn hình Home Screen là màn hình như thế nào?",
+          "answers": [
+            "Màn hình cung cấp cho người dùng truy cập đến các ứng dụng Mail được cài trên thiết bị",
+            "Chứa các folder, widgets hoặc các app shortcuts tùy theo ý người dùng",
+            "Màn hình cung cấp cho người dùng truy cập đến các ứng dụng đang chạy gần đây một cách nhanh nhất",
+            "Hiển thị toàn bộ ứng dụng được cài trên máy từ Amazon Store, và có thể đưa một ứng dụng bất kỳ ra màn hình Home"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Câu nào đúng khi nói về AutoCompleteTextView?",
+          "answers": [
+            "Vừa là layout vừa là widget",
+            "Thực chất là một Menu",
+            "Là một layout",
+            "Là một widget"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Đơn vị đo lường không dùng trong Android là?",
+          "answers": [
+            "Db/dip (Density- independent pixel)",
+            "Px (Pixel)",
+            "Ptx",
+            "Pt (Point)"
+          ],
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "id": "CLCO",
+      "name": "Điện toán đám mây",
+      "created": "2019-05-24",
+      "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/CLCO.jpg",
+      "questions": [
+        {
+          "question": "Dịch vụ Amazon Elastic Compute Cloud có chức năng chính là gì?",
+          "answers": [
+            "Hỗ trợ lưu trữ web",
+            "Hỗ trợ cập nhật dữ liệu",
+            "Hỗ trợ thay đổi kiến trúc mô hình cloud",
+            "Hỗ trợ truy xuất dữ liệu"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Câu nào là đúng đối với UDDI?",
+          "answers": [
+            "UDDI là cách viết khác của WSDL",
+            "UDDI tương tự như WSDL",
+            "UDDI cho phép ghi thông tin về doanh nghiệp và chi tiết sử dụng dịch vụ web.",
+            "UDDI không cho phép ghi thông tin về doanh nghiệp và chi tiết sử dụng dịch vụ web, nó chỉ được thực hiện qua WSDL"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Câu nào là đúng đối với WSDL?",
+          "answers": [
+            "WSDL Cho phép các nhà phát triển ghi thông tin dịch vụ web",
+            "WSDL kết nối trực tiếp với cơ sở dữ liệu SQLite và trả về kết quả cho người dùng",
+            "WSDL là cầu nối giữa người sử dụng với Database",
+            "WSDL không cho phép các nhà phát triển ghi thông tin dịch vụ web"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "WSDL là viết tắt của cụm từ nào?",
+          "answers": [
+            "Width Server Description Language",
+            "Width Services Description Language",
+            "Web Services Description Language",
+            "Web Server Description Language"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "API là viết tắt của cụm từ nào?",
+          "answers": [
+            "Application Private Interface",
+            "Application Programming Internet",
+            "Application Programming Interface",
+            "Application Public Interface"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Câu nào là đúng đối với API?",
+          "answers": [
+            "API cho phép các chương trình sử dụng có thể giao tiếp với nhau mà không cần sự tham gia của người dùng",
+            "API bản chất là một webserver",
+            "Để giao tiếp các chương trình sử dụng API nhất thiết phải có sự tham gia của người dùng",
+            "API bản chất là một không gian lưu trữ web"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Câu nào là đúng đối với SOAP?",
+          "answers": [
+            "Sử dụng để mã hóa thông điệp HTML",
+            "Sử dụng để duy trì kết nối internet",
+            "Sử dụng để mã hóa thông điệp XML",
+            "Sử dụng để mã hóa CSS"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Câu nào là đúng đối với API?",
+          "answers": [
+            "API là một file thư viện dạng dll",
+            "API là một file thực thi dạng exe",
+            "API không cho phép các nhà phát triển khác sử dụng để phát triển sản phẩm của riêng họ",
+            "API cho phép các nhà phát triển khác sử dụng để phát triển sản phẩm của riêng họ"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "AJAX sử dụng công nghệ nào?",
+          "answers": [
+            "Sử dụng các công nghệ GSM, CDMA, CSS",
+            "Sử dụng các công nghệ XHTML, CSS, JSON",
+            "Chỉ sử dụng duy nhất công nghệ CDMA",
+            "Sử dụng các công nghẹ XHTML, CMS, CRM, HTML, CSS"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Bất lợi của AJAX là gì?",
+          "answers": [
+            "Có thể hiển thị lịch sử truy cập nhưng tối đa hiển thị là 10 bản ghi",
+            "Phải sử dụng nhiều đoạn kịch bản PHP",
+            "Phải sử dụng nhiều doạn kịch bản JavaScript",
+            "Không hiển thị lịch sử truy cập"
+          ],
+          "correctAnswer": 3
+        }
+      ]
+    },
+    {
+      "id": "DBAV",
+      "name": "SQL Server",
+      "created": "2019-09-14",
+      "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/DBAV.png",
+      "questions": [
+        {
+          "question": "SQL sử dụng ngôn ngữ nào sau đây để truy vấn CSDL: A. SQL B. PL-SQL C. Transact-SQL",
+          "answers": [
+            "B Đúng",
+            "C Đúng",
+            "Cả A, B, C đều sai",
+            "A Đúng"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Câu lệnh nào sau đây là câu lệnh điều khiển dữ liệu (DCL) A DENY B CREATE C GRANT D REVOKE",
+          "answers": [
+            "A, C, D đúng",
+            "B, C , D đúng",
+            "A, B , D đúng",
+            "A, B, C đúng"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Để khởi động và dừng SQL Server sử dụng công cụ nào dưới đây:",
+          "answers": [
+            "SQL Server Start/Stop Manager",
+            "SQL Server Configuration Management",
+            "SQL Server Management Studio",
+            "SQL Server Configuration Manager"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Các ứng dụng nào sau đây có thể truy cập tới hệ quản trị CSDL SQL Server",
+          "answers": [
+            "Ứng dụng .NET",
+            "Tất cả đáp án đều đúng",
+            "Ứng dụng Java",
+            "Ứng dụng Visual Basic 6"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Phát biểu nào sau đây ĐÚNG về T-SQL?",
+          "answers": [
+            "Có thể sử dụng T-SQL để thao tác trên mọi hệ quản trị CSDL quan hệ",
+            "T-SQL là ngôn ngữ mở rộng của SQL chuẩn, cung cấp thêm các tính năng lập trình",
+            "T-SQL là tên gọi khác của ngôn ngữ SQL",
+            "Tất cả các đáp án đều sai"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Nếu quá trình thực thi một câu lệnh SQL xảy ra lỗi cú pháp. SQL Server sẽ thông báo lỗi đó bằng cách",
+          "answers": [
+            "Hiển thị đường màu xanh lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Message",
+            "Hiển thị đường màu xanh lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Systax Error",
+            "Hiển thị đường màu đỏ lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Message",
+            "Hiển thị đường màu đỏ lượn sóng gạch chân phần câu lệnh nhập sai và hiển thị một thông báo lỗi trong Tab Systax Error"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Các lỗi cú pháp nào sau đây thường gặp khi thực thi câu lệnh SQL A. Quên hoặc lựa chọn sai CSDL B. Viết sai tên bảng hoặc tên cột C. Viết sai từ khóa D. Bỏ sót dấu đóng ngoặc với một chuỗi ký tự.",
+          "answers": [
+            "B, C , D Đúng",
+            "Cả A, B, C, D đều đúng",
+            "A, D Đúng",
+            "A, B, C Đúng"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Khi kết nối tới CSDL SQL Server, tại hộp thoại Connect to Server của SQL Management Studio, chế độ xác thực nào sau đây người dùng phải nhập User Name và Password",
+          "answers": [
+            "Windows Authentication",
+            "SQL Server Authentication",
+            "Windows Authentication và SQL Server Authentication",
+            "Tất cả đáp án đều sai"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Nên sử dụng kiểu dữ liệu nào sau đây để lưu chuỗi với độ dài cố định hỗ trợ UNICODE",
+          "answers": [
+            "Varchar",
+            "Char",
+            "Nchar",
+            "Nvarchar"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Đâu là chú thích sử dụng trong T-SQL",
+          "answers": [
+            "*/ Chú thích dung */",
+            "--Chú thích đúng",
+            "/* Chú thích đúng /*",
+            "//Chú thích đúng"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": "ASNE",
+      "name": "Lập trình ASP.NET",
+      "created": "2018-05-14",
+      "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/ASNE.png",
+      "questions": [
+        {
+          "question": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+          "answers": [
+            "Prerender",
+            "Init",
+            "Load",
+            "Unload"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Bạn hãy cho biết định nghĩa nào sau đây là nói về ứng dụng web?",
+          "answers": [
+            "Là một ứng dụng client/server được truy cập thông qua trình duyệt Web trên mạng Internet hoặc intranet",
+            "Các phương án đều đúng",
+            "Là ứng dụng chỉ chạy trên một máy tính đơn",
+            "Là ứng dụng chỉ chạy trên môi trường mobile"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Để hiển thị dòng \"Hello World\" trên trang web, trong ASP.Net cần dùng lệnh nào?",
+          "answers": [
+            "Document.Write(\"Hello World\");",
+            "\"Hello World\"",
+            "Request.Write((\"Hello World\");",
+            "Response.Write(\"Hello World\");"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Phát biểu nào sau đây đúng về ASP.NET?",
+          "answers": [
+            "ASP.NET là mô hình lập trình hướng cấu trúc",
+            "ASP.NET là mô hình lập trình hướng sự kiện",
+            "ASP.NET là mô hình lập trình hướng thành phần",
+            "ASP.NET là mô hình lập trình hướng đối tượng"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Khi chạy một ứng dụng ASP.NET, nếu ngoại lệ xảy ra nhưng không được bắt và xử lý, ứng dụng sẽ chuyển sang chế độ ngắt và hộp thoại ............ sẽ hiển thị.",
+          "answers": [
+            "Exception Assistant",
+            "Exception Help",
+            "Các phương án đều sai",
+            "Exception"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Theo bạn, câu nào sau đây là sai khi nói về web động?",
+          "answers": [
+            "Viết hoàn toàn bằng ngôn ngữ HTML",
+            "Có tương tác với người dùng, nội dung của trang hiển thị khác nhau đáp ứng các sự kiện.",
+            "Có thể dùng để hiển thị và cung cấp thông tin",
+            "Lưu dữ liệu trong cơ sở dữ liệu"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Phím tắt nào sau đây dùng để bắt đầu chạy ứng dụng dưới chế độ gỡ lỗi?",
+          "answers": [
+            "F9",
+            "F5",
+            "F10",
+            "F11"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Lớp nào sau đây được ASP.NET cung cấp để duy trì các thông tin trao đổi giữa Client và Server?",
+          "answers": [
+            "HttpResponse",
+            "Các phương án đều đúng",
+            "HttpServerUtility",
+            "HttpRequest"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Theo bạn, sự kiện nào sau đây được xem là sự kiện tự động kích hoạt?",
+          "answers": [
+            "Tải trang (Page_load)",
+            "Thay đổi giá trị ở TextBox (changeText)",
+            "Nhấn chuột vào một nút (button_click)",
+            "Đóng cửa sổ trình duyệt (close window)"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Những điều khiển nào sau đây thuộc về loại List Control?",
+          "answers": [
+            "DropDownList, ListBox, RadioButtonList, CheckBoxList, BulletedList",
+            "ComboboxList, ListBox, HyperLinkList, CheckBoxList, BulletedList",
+            "ComboboxList, ListBox, RadioButtonList, CheckBoxList, BulletedList",
+            "DropdownList, ButtonList , RadioButtonList, CheckBoxList, ListBox"
+          ],
+          "correctAnswer": 0
+        }
+      ]
+    },
+    {
+      "id": "DBBS",
+      "name": "Cơ sở dữ liệu",
+      "created": "2019-01-14",
+      "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/DBBS.png",
+      "questions": [
+        {
+          "question": "Phát biểu nào dưới đây là đúng về quản lý dữ liệu?",
+          "answers": [
+            "Thực hiện thao tác dữ liệu và truy vấn dữ liệu",
+            "Quản lý lưu trữ dữ liệu, thao tác dữ liệu và truy vấn dữ liệu",
+            "Quản lý lưu trữ dữ liệu, thêm, sửa, xóa dữ liệu",
+            "Cho phép lưu trữ dữ liệu và truy vấn dữ liệu"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Hệ quản trị cơ sở dữ liệu không mang lại các lợi ích nào sau đây?",
+          "answers": [
+            "Hỗ trợ các ngôn ngữ giao tiếp",
+            "Quản trị các cơ sở dữ liệu",
+            "Cung cấp các truy cập đến tổ chức dữ liệu vật lý",
+            "Có cơ chế an toàn, bảo mật cao"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Phát biểu nào là đúng cho mô hình dữ liệu phân cấp?",
+          "answers": [
+            "Liên hệ dữ liệu theo kiểu cha-con, mỗi cha có một con và mỗi con có một cha",
+            "Liên hệ dữ liệu có thể thừa kế giữa cha và con",
+            "Kiểu quan hệ là 1-N và N-N",
+            "Mỗi nút biểu diễn một thực thể dữ liệu và được tổ chức theo hình cây"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Hệ quản trị cơ sở dữ liệu được hiểu là gì?",
+          "answers": [
+            "Phần mềm giúp tạo cơ sở dữ liệu, cung cấp cơ chế lưu trữ, thao tác và truy cập cơ sở dữ liệu theo các mô hình cơ sở dữ liệu",
+            "Công cụ giúp lưu trữ, thao tác và truy cập cơ sở dữ liệu quan hệ",
+            "Phần mềm cung cấp cách thức tổ chức, thao tác dữ liệu theo các mô hình cơ sở dữ liệu",
+            "Công cụ giúp lưu trữ, thao tác và truy cập mô hình cơ sở dữ liệu"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "Dữ liệu (data) được mô tả dưới dạng nào dưới đây:",
+          "answers": [
+            "Các ký tự, ký số",
+            "Hình ảnh, âm thanh",
+            "Các phương án đều đúng",
+            "Ký hiệu"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Bảng hiệu quảng cáo là dữ liệu gì?",
+          "answers": [
+            "Dữ liệu dạng âm thanh",
+            "Dữ liệu dạng ký hiệu",
+            "Dữ liệu dạng ký số",
+            "Dữ liệu dạng hình ảnh"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Phát biểu nào sau đây là không đúng với mô hình cơ sở dữ liệu hướng đối tượng?",
+          "answers": [
+            "Các đối tượng trao đổi thông qua các phương thức",
+            "Một đối tượng gồm các thuộc tính, các phương thức",
+            "Các đối tượng không thể được lưu trữ trong cơ sở dữ liệu",
+            "Các đối tượng có thể được sinh ra từ việc thừa kế"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "Hệ quản trị cơ sở dữ liệu phổ biến nhất hiện nay là gì?",
+          "answers": [
+            "Hệ quản trị cơ sở dữ liệu phân cấp",
+            "Hệ quản trị cơ sở dữ liệu quan hệ",
+            "Hệ quản trị cơ sở dữ liệu mạng",
+            "Hệ quản trị cơ sở dữ liệu hướng đối tượng"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "Phát biểu nào dưới đây là đúng với hệ quản trị cơ sở dữ liệu MySQL?",
+          "answers": [
+            "Một hệ quản trị dữ liệu dạng file, không thể cho nhiều người cùng truy xuất",
+            "Một hệ quản trị cơ sở dữ liệu cỡ nhỏ, chủ yếu dùng cho mục đích cá nhân",
+            "Một hệ quản trị cơ sở dữ liệu của hãng Microsoft",
+            "Một hệ quản trị cơ sở liệu mã nguồn mở rất được ưa chuộng"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Những thông tin được nhập từ bàn phím là dữ liệu gì?",
+          "answers": [
+            "Dữ liệu dạng âm thanh",
+            "Dữ liệu dạng hình ảnh",
+            "Dữ liệu dạng ký hiệu",
+            "Dữ liệu dạng ký tự, ký số"
+          ],
+          "correctAnswer": 3
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 2,
+      "email": "teonv123@fpt.edu.vn",
+      "password": "1234",
+      "username": "depzai",
+      "fullName": "vl"
+    },
+    {
+      "id": 1,
+      "email": "teonv@fpt.edu.vn",
+      "username": "teonv123",
+      "password": "321",
+      "fullName": "Nguyễn Văn Tèo 123"
+    },
+    {
+      "email": "teonv123232@fpt.edu.vn",
+      "password": "123",
+      "username": "depzai",
+      "fullName": "123",
+      "id": 3
+    },
+    {
+      "email": "teon3212v@fpt.edu.vn",
+      "password": "123",
+      "username": "123",
+      "fullName": "123",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "email": "minh12323232@gmail.com",
+      "username": "depzaivl",
+      "password": "21",
+      "fullName": "Vu Nhat Minh123"
+    }
+  ]
+}

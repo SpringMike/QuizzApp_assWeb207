@@ -3,7 +3,7 @@ const {Component} = require("react");
 class SideBar extends Component {
     render() {
         return (
-            <aside className="col-3 ">
+            <aside className="col-sm-12 col-lg-3 col-xs-12 col-lg-3 ">
                 <div className="card">
                     <div className="card-header">Danh sách các chủ đề</div>
                     <ul className="nav nav-pills flex-column mb-auto sideBar">

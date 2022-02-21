@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
+
 import Header from "./Components/header";
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import Footer from "./Components/Footer";
@@ -14,6 +15,7 @@ import Home from "./Pages/Home";
 import Quiz from "./Pages/Quiz";
 import Introduce from "./Pages/Introduce";
 import NotFound from "./NotFound";
+import Result from "./Pages/Result";
 
 function App() {
 
@@ -26,7 +28,8 @@ function App() {
                 <Route exact path='/contact' element={<Contact/>}/>
                 <Route exact path='/faq' element={<Faq/>}/>
                 <Route exact path='/feedBack' element={<FeedBack/>}/>
-                <Route exact path='/quiz' element={<Quiz/>}/>
+                <Route  path='/quizzs/:id' element={<Quiz />}/>
+                <Route exact path='/result' element={<Result/>}/>
                 <Route exact path='/introduce' element={<Introduce/>}/>
 
                 <Route path='*' element={<NotFound/>}/>
