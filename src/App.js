@@ -16,6 +16,8 @@ import Quiz from "./Pages/Quiz";
 import Introduce from "./Pages/Introduce";
 import NotFound from "./NotFound";
 import Result from "./Pages/Result";
+import Content from "./Components/admin/content";
+import EditQuiz from "./Components/admin/EditQuiz";
 
 function App() {
 
@@ -31,6 +33,9 @@ function App() {
                 <Route  path='/quizzs/:id' element={<Quiz />}/>
                 <Route exact path='/result' element={<Result/>}/>
                 <Route exact path='/introduce' element={<Introduce/>}/>
+
+                <Route exact path='/admin/home' element={<Content/>}/>
+                <Route exact  path='/admin/editQuiz/:id' element={<EditQuiz />}/>
 
                 <Route path='*' element={<NotFound/>}/>
             </Routes>

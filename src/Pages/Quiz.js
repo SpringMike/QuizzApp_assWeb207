@@ -88,8 +88,9 @@ const Quiz = () => {
                         findCheckedInput.checked = false;
                     }
                     setCurrentQuestion(nextQuestion)
-                    const listDone = [...isDoneQuestion, currentQuestion]
-                    setIsDoneQuestion(listDone)
+                    // const listDone = [...isDoneQuestion, currentQuestion]
+                    // setIsDoneQuestion(listDone)
+
                     loadQuiz()
                 }
                 setBtnEnable(false)
@@ -109,6 +110,7 @@ const Quiz = () => {
                 }
             }
         })
+
     }
 
 
@@ -189,6 +191,7 @@ const Quiz = () => {
                                             <ProgressBar completed={currentQuestion} maxCompleted={questions.length} />
                                             <div className='mb-3 mt-2'>
                                                 <p style={{fontSize: '20px'}}>Tổng điểm : {score} đ</p>
+
                                             </div>
 
                                             <div className="card">

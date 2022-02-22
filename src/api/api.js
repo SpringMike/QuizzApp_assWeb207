@@ -10,8 +10,18 @@ export const getUsers = async () => {
 export const getQuiz = async () => {
     return await axios.get(`${process.env.REACT_APP_API}/quizzs`)
 }
+
 export const createUser= async(user) =>{
     return await axios.post(`${process.env.REACT_APP_API}/users`, user)
+}
+export const createQuiz= async(quiz) =>{
+    return await axios.post(`${process.env.REACT_APP_API}/quizzs`, quiz)
+}
+export const editQuiz= async(id,quiz) =>{
+    return await axios.put(`${process.env.REACT_APP_API}/quizzs/${id}`, quiz)
+}
+export const createQuestion= async(id,quiz) =>{
+    return await axios.put(`${process.env.REACT_APP_API}/quizzs/${id}`, quiz)
 }
 // export const getUserById= async(id) =>{
 //     return await axios.get(`${process.env.REACT_APP_API}/${id}`)

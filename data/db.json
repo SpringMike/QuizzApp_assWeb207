@@ -539,6 +539,70 @@
           "correctAnswer": 3
         }
       ]
+    },
+    {
+      "id": "TEST",
+      "name": "test 321",
+      "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/DBBS.png",
+      "questions": [
+        {
+          "question": "depzai loi tai ai",
+          "answers": [
+            "tai minh",
+            "tai bo me",
+            "tai ong hang xom",
+            "tai anh kha banh"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "thu do cua viet nam",
+          "answers": [
+            "ha noi",
+            "ha loi",
+            "sai gon",
+            "cali"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "dm",
+          "answers": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "dcmmm",
+          "answers": [
+            "alo 123",
+            "32",
+            "12343",
+            "1223"
+          ],
+          "correctAnswer": 3
+        }
+      ]
+    },
+    {
+      "id": "TEST 123",
+      "name": "kiem tra kien thuc can ban",
+      "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/DBBS.png",
+      "questions": [
+        {
+          "question": "depzai loi tai ai",
+          "answers": [
+            "tai minh 123",
+            "tai bo me",
+            "tai ong hang xom",
+            "tai ong troi"
+          ],
+          "correctAnswer": 3
+        }
+      ]
     }
   ],
   "users": [
@@ -572,7 +636,7 @@
     },
     {
       "id": 5,
-      "email": "minh12323232@gmail.com",
+      "email": "minh@gmail.com",
       "username": "depzaivl",
       "password": "21",
       "fullName": "Vu Nhat Minh123"

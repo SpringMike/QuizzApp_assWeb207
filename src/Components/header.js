@@ -1,7 +1,7 @@
 import banner from "../img/baner.jpg"
 
 import Modal_SignUp_SignIn from "./Modal_SignUp_SignIn";
-import {Link, NavLink} from 'react-router-dom'
+import {Link, NavLink, useNavigate} from 'react-router-dom'
 import ChangePass from "./ChangePass";
 import Swal from "sweetalert2";
 import EditProfile from "./EditProfile";
@@ -11,6 +11,7 @@ const {Component} = require("react");
 const Header = () => {
     const user = JSON.parse(localStorage.getItem("users"))
     const isLogin = user !== null
+    const navigate = useNavigate()
 
     const handleSignOut = ()=>{
         Swal.fire(
@@ -19,6 +20,7 @@ const Header = () => {
             'success'
         )
         localStorage.clear();
+        navigate("/")
         setTimeout(() =>{
             window.location.reload();
         },1000)
@@ -53,9 +55,11 @@ const Header = () => {
                                         data-bs-toggle="dropdown"> Xin chao {`${user.username} `} </a>
                                      <ul className="dropdown-menu">
                                          <li><a className="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#changePassModal"> Doi mat khau</a></li>
-                                         <li><a data-bs-toggle="modal" data-bs-target='#editProfileModal' className="dropdown-item" href="#"> Cap nhap tai khoan </a></li>
-                                         <li><a onClick={handleSignOut} className="dropdown-item" href="#"> Dang xuat</a></li>
+                                                data-bs-target="#changePassModal"> Đổi mật khẩu</a></li>
+                                         <li><a data-bs-toggle="modal" data-bs-target='#editProfileModal' className="dropdown-item" href="#"> Cập nhập tài khoản </a></li>
+                                         <li><Link className="dropdown-item" to="/admin/home">Quản lý quiz</Link></li>
+                                         <li><a onClick={handleSignOut} className="dropdown-item" href="#"> Đăng xuất</a></li>
+
                                      </ul>
                                      <EditProfile/>
                                      <ChangePass/>
