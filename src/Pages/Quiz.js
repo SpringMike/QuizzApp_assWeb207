@@ -1,6 +1,6 @@
 import SideBar from "../Components/SideBar";
 import {useEffect, useRef, useState} from "react";
-import {getQuestionByQuiz} from "../api/api";
+import {editUserById, getQuestionByQuiz} from "../api/api";
 import Result from "./Result";
 import {useLocation, useNavigate} from "react-router-dom";
 import NotFound from "../NotFound";
@@ -37,6 +37,7 @@ const Quiz = () => {
 
     let findCheckedInput;
 
+
     const loadQuiz = async () => await getQuestionByQuiz(partName).then((quiz) => {
         setQuiz(quiz.data)
         setQuestions(quiz.data.questions)
@@ -50,9 +51,6 @@ const Quiz = () => {
         loadQuiz().then(r => {
         })
     }, [currentQuestion])
-
-
-
 
 
     const handleClickAnswer = () => {
@@ -82,6 +80,7 @@ const Quiz = () => {
                 const nextQuestion = currentQuestion + 1;
                 if (nextQuestion > questions.length - 1) {
                     setEnd(true)
+
                 } else {
                     findCheckedInput = radiosWrapper.current.querySelector('input:checked');
                     if (findCheckedInput) {
@@ -90,7 +89,6 @@ const Quiz = () => {
                     setCurrentQuestion(nextQuestion)
                     // const listDone = [...isDoneQuestion, currentQuestion]
                     // setIsDoneQuestion(listDone)
-
                     loadQuiz()
                 }
                 setBtnEnable(false)
@@ -110,7 +108,6 @@ const Quiz = () => {
                 }
             }
         })
-
     }
 
 
@@ -131,9 +128,9 @@ const Quiz = () => {
                     'Bạn đã hoàn thành bài quiz.',
                     'success'
                 )
+
             }
         })
-
     }
 
     // const handleQuestionClick = async (i) => {
@@ -172,7 +169,7 @@ const Quiz = () => {
                                 {/*</div>*/}
 
                                 {
-                                    end === true ? <Result data={score}/> :
+                                    end === true ? <Result results={quiz} data={score}/> :
                                         <>
                                             {/*<nav*/}
                                             {/*    aria-label="breadcrumb">*/}
@@ -188,7 +185,7 @@ const Quiz = () => {
                                             {/*        }*/}
                                             {/*    </ol>*/}
                                             {/*</nav>*/}
-                                            <ProgressBar completed={currentQuestion} maxCompleted={questions.length} />
+                                            <ProgressBar completed={currentQuestion} maxCompleted={questions.length}/>
                                             <div className='mb-3 mt-2'>
                                                 <p style={{fontSize: '20px'}}>Tổng điểm : {score} đ</p>
 

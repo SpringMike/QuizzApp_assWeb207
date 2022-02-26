@@ -1,5 +1,5 @@
-import SignUp from "../SignUp";
-import LogIn from "../LogIn";
+import SignUp from "../../Components/SignUp";
+import LogIn from "../../Components/LogIn";
 import {useState} from "react";
 import {createQuiz, createUser} from "../../api/api";
 import Swal from "sweetalert2";
@@ -14,7 +14,6 @@ const CreateQuiz = () =>{
 
 
     const handleSubmit = async (e) =>{
-
         const quiz = {
             'id': id,
             'name': name,

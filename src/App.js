@@ -16,8 +16,12 @@ import Quiz from "./Pages/Quiz";
 import Introduce from "./Pages/Introduce";
 import NotFound from "./NotFound";
 import Result from "./Pages/Result";
-import Content from "./Components/admin/content";
-import EditQuiz from "./Components/admin/EditQuiz";
+import Content from "./Pages/admin/content";
+import EditQuiz from "./Pages/admin/EditQuiz";
+import UserManager from "./Pages/admin/UserManager";
+import ProtectedRoutes from "./Sercu/ProtectedRoutes";
+import ProtectedRoutesWithRole from "./Sercu/ProtectedRoutesWithRole";
+import UserHistory from "./Pages/UserHistory";
 
 function App() {
 
@@ -30,12 +34,22 @@ function App() {
                 <Route exact path='/contact' element={<Contact/>}/>
                 <Route exact path='/faq' element={<Faq/>}/>
                 <Route exact path='/feedBack' element={<FeedBack/>}/>
-                <Route  path='/quizzs/:id' element={<Quiz />}/>
-                <Route exact path='/result' element={<Result/>}/>
+
+
                 <Route exact path='/introduce' element={<Introduce/>}/>
 
-                <Route exact path='/admin/home' element={<Content/>}/>
-                <Route exact  path='/admin/editQuiz/:id' element={<EditQuiz />}/>
+                <Route element = {<ProtectedRoutes/>}>
+                    <Route  path='/quizzs/:id' element={<Quiz />}/>
+                    <Route exact path='/result' element={<Result/>}/>
+                    <Route exact path='/history' element={<UserHistory/>}/>
+                </Route>
+
+
+                <Route element = {<ProtectedRoutesWithRole/>}>
+                    <Route exact path='/admin/home' element={<Content/>}/>
+                    <Route exact  path='/admin/editQuiz/:id' element={<EditQuiz />}/>
+                    <Route exact  path='/admin/users' element={<UserManager />}/>
+                </Route>
 
                 <Route path='*' element={<NotFound/>}/>
             </Routes>

@@ -1,4 +1,4 @@
-import SideBar from "../SideBar";
+import SideBar from "../../Components/SideBar";
 import {useEffect, useState} from "react";
 import {createQuestion, createQuiz, editQuiz, getQuestionByQuiz} from "../../api/api";
 import {useLocation, useNavigate, useParams} from "react-router-dom";

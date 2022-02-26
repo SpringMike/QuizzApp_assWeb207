@@ -11,9 +11,10 @@ const {Component} = require("react");
 const Header = () => {
     const user = JSON.parse(localStorage.getItem("users"))
     const isLogin = user !== null
+
     const navigate = useNavigate()
 
-    const handleSignOut = ()=>{
+    const handleSignOut = () => {
         Swal.fire(
             'Success',
             'Ban da dang xuat thanh cong!',
@@ -21,9 +22,9 @@ const Header = () => {
         )
         localStorage.clear();
         navigate("/")
-        setTimeout(() =>{
+        setTimeout(() => {
             window.location.reload();
-        },1000)
+        }, 1000)
     }
     return (
         <div>
@@ -50,20 +51,26 @@ const Header = () => {
                         <div className=" ms-auto">
                             {
                                 isLogin ? (
-                                 <div className="dropdown">
-                                     <a className="nav-link  dropdown-toggle" href="#"
-                                        data-bs-toggle="dropdown"> Xin chao {`${user.username} `} </a>
-                                     <ul className="dropdown-menu">
-                                         <li><a className="dropdown-item" href="#" data-bs-toggle="modal"
-                                                data-bs-target="#changePassModal"> Đổi mật khẩu</a></li>
-                                         <li><a data-bs-toggle="modal" data-bs-target='#editProfileModal' className="dropdown-item" href="#"> Cập nhập tài khoản </a></li>
-                                         <li><Link className="dropdown-item" to="/admin/home">Quản lý quiz</Link></li>
-                                         <li><a onClick={handleSignOut} className="dropdown-item" href="#"> Đăng xuất</a></li>
-
-                                     </ul>
-                                     <EditProfile/>
-                                     <ChangePass/>
-                                 </div>
+                                    <div className="dropdown">
+                                        <a className="nav-link  dropdown-toggle" href="#"
+                                           data-bs-toggle="dropdown"> Xin chao {`${user.username} `} </a>
+                                        <ul className="dropdown-menu">
+                                            <li><a className="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#changePassModal"> Đổi mật khẩu</a></li>
+                                            <li><a data-bs-toggle="modal" data-bs-target='#editProfileModal' className="dropdown-item" href="#"> Cập nhập tài khoản </a></li>
+                                            <li><Link className="dropdown-item" to="/history">Lịch sử làm quiz</Link></li>
+                                            {
+                                                user.role === 1 ? (
+                                                    <>
+                                                        <li><Link className="dropdown-item" to="/admin/home">Quản lý quiz</Link></li>
+                                                        <li><Link className="dropdown-item" to="/admin/users">Quản lý users</Link></li>
+                                                    </>
+                                                ) : (<></>)
+                                            }
+                                            <li><a onClick={handleSignOut} className="dropdown-item" href="#"> Đăng xuất</a></li>
+                                        </ul>
+                                        <EditProfile/>
+                                        <ChangePass/>
+                                    </div>
                                 ) : (
                                     <a className="fs-6 fw-bold nav-link" href="#" data-bs-toggle="modal"
                                        data-bs-target="#exampleModal">

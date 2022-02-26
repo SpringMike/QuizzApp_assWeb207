@@ -20,6 +20,9 @@ export const createQuiz= async(quiz) =>{
 export const editQuiz= async(id,quiz) =>{
     return await axios.put(`${process.env.REACT_APP_API}/quizzs/${id}`, quiz)
 }
+export const deleteQuiz= async(id) =>{
+    return await axios.delete(`${process.env.REACT_APP_API}/quizzs/${id}`)
+}
 export const createQuestion= async(id,quiz) =>{
     return await axios.put(`${process.env.REACT_APP_API}/quizzs/${id}`, quiz)
 }

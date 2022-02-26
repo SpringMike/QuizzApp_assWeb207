@@ -35,22 +35,22 @@ const CreateQuestion = () => {
 
         const trueQuiz = {
             ...quiz,
-            'questions': [...quiz.questions,questions]
+            'questions': [...quiz.questions, questions]
         }
 
-        await createQuestion(id,trueQuiz).then(() =>{
+        await createQuestion(id, trueQuiz).then(() => {
             Swal.fire(
                 'Thành công',
                 'Thêm mới thành công!',
                 'success'
             )
-        }).catch(err =>{
+        }).catch(err => {
             console.log(err)
         })
 
-        setTimeout(() =>{
+        setTimeout(() => {
             window.location.reload()
-        },1000)
+        }, 1000)
     }
 
 

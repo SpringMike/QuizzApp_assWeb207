@@ -541,8 +541,8 @@
       ]
     },
     {
-      "id": "TEST",
-      "name": "test 321",
+      "id": "Kiến thức căn bản",
+      "name": "kiem tra kien thuc can ban",
       "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/DBBS.png",
       "questions": [
         {
@@ -551,54 +551,17 @@
             "tai minh",
             "tai bo me",
             "tai ong hang xom",
-            "tai anh kha banh"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "question": "thu do cua viet nam",
-          "answers": [
-            "ha noi",
-            "ha loi",
-            "sai gon",
-            "cali"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "question": "dm",
-          "answers": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correctAnswer": 2
-        },
-        {
-          "question": "dcmmm",
-          "answers": [
-            "alo 123",
-            "32",
-            "12343",
-            "1223"
-          ],
-          "correctAnswer": 3
-        }
-      ]
-    },
-    {
-      "id": "TEST 123",
-      "name": "kiem tra kien thuc can ban",
-      "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/DBBS.png",
-      "questions": [
-        {
-          "question": "depzai loi tai ai",
-          "answers": [
-            "tai minh 123",
-            "tai bo me",
-            "tai ong hang xom",
             "tai ong troi"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "thủ đô của việt nam",
+          "answers": [
+            "hà nội ",
+            "hà nội 2",
+            "hà nội 3",
+            "hà nội 4"
           ],
           "correctAnswer": 3
         }
@@ -611,35 +574,60 @@
       "email": "teonv123@fpt.edu.vn",
       "password": "1234",
       "username": "depzai",
-      "fullName": "vl"
+      "fullName": "vl",
+      "role": 0,
+      "quiz": [
+        {
+          "id": "ADUI",
+          "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/ADAV.jpg",
+          "name": "Thiết kế giao diện trên Android",
+          "time": "26/02/2022 18h0p ",
+          "score": 2,
+          "length": 10
+        },
+        {
+          "id": "CLCO",
+          "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/CLCO.jpg",
+          "name": "Điện toán đám mây",
+          "time": "26/02/2022 18h1p ",
+          "score": 1,
+          "length": 10
+        },
+        {
+          "id": "ADUI",
+          "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/ADAV.jpg",
+          "name": "Thiết kế giao diện trên Android",
+          "time": "26/02/2022 18h1p ",
+          "score": 5,
+          "length": 10
+        }
+      ]
     },
     {
-      "id": 1,
-      "email": "teonv@fpt.edu.vn",
-      "username": "teonv123",
-      "password": "321",
-      "fullName": "Nguyễn Văn Tèo 123"
-    },
-    {
-      "email": "teonv123232@fpt.edu.vn",
-      "password": "123",
-      "username": "depzai",
-      "fullName": "123",
-      "id": 3
-    },
-    {
-      "email": "teon3212v@fpt.edu.vn",
-      "password": "123",
-      "username": "123",
-      "fullName": "123",
-      "id": 4
-    },
-    {
-      "id": 5,
       "email": "minh@gmail.com",
-      "username": "depzaivl",
-      "password": "21",
-      "fullName": "Vu Nhat Minh123"
+      "password": "123",
+      "username": "bomaydeptry",
+      "fullName": "Vu Nhat Minh",
+      "role": 0,
+      "quiz": [
+        {
+          "id": "ADUI",
+          "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/ADAV.jpg",
+          "name": "Thiết kế giao diện trên Android",
+          "time": "26/02/2022 18h6p ",
+          "score": 6,
+          "length": 10
+        },
+        {
+          "id": "Kiến thức căn bản",
+          "image": "https://raw.githubusercontent.com/nevermore6264/ass_web207/master/dist/images/logos/DBBS.png",
+          "name": "kiem tra kien thuc can ban",
+          "time": "26/02/2022 18h8p ",
+          "score": 1,
+          "length": 2
+        }
+      ],
+      "id": 3
     }
   ]
 }
